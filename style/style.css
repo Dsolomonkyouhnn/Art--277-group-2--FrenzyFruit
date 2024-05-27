@@ -1,0 +1,377 @@
+* {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    scroll-behavior: smooth; /* Smooth scrolling behavior when jumping to sections */
+}
+
+h2 {
+    text-align: center; /* Center heading */
+    font-size: 2.5em; /* Set font size */
+    color: #333; /* Set text color */
+    margin-bottom: 30px; /* Add bottom margin for spacing */
+}
+
+h4 {
+    font-size: 1.5em; /* Set font size */
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+p {
+    text-align: center; /* Center paragraph text */
+    color: #000; /* Set text color */
+    font-size: 1.1em; /* Set font size */
+    line-height: 1.6; /* Set line height for better readability */
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Set default font family */
+    background-color: #fff; /* Set background color for the body */
+}
+
+header {
+    background-color: rgba(225, 225, 225, 0.5); /* Set background color for the header */
+    display: flex; /* Use flexbox for header layout */
+    align-items: center; /* Center items vertically in the header */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    position: fixed; /* Make the header stick to the top on scroll */
+    top: 0;
+    width: 100%;
+    left: 0; /* Position the sticky header at the top */
+    z-index: 100; /* Ensure the header is on top of other elements */
+    backdrop-filter: blur(5px); /* Add blur effect to pseudo-element */
+
+}
+
+header h2 {
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding */
+    font-size: 25px; /* Set font size */
+    margin-left: 20px; /* Add left margin for spacing */
+    cursor: default;
+}
+
+header h2 .orange {
+    color: orange; /* Set color for the "orange" part */
+}
+
+header h2 .black {
+    color: black; /* Set color for the "black" part */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    text-align: center; /* Center list items */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items horizontally */
+    margin: 0 15px; /* Add horizontal spacing between list items */
+}
+
+nav ul li a {
+    color: #333; /* Set color for navigation links */
+    text-decoration: none; /* Remove underline for links */
+    font-weight: bold; /* Make links bold */
+    font-size: 18px; /* Set font size for links */
+    padding: 7px; /* Add padding to links */
+    border-radius: 10px; /* Add rounded corners to links */
+}
+
+nav ul li a:hover {
+    background-color: orange; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transition: all 0.5s; /* Add smooth transition effect */
+}
+
+header .social-icons {
+    margin-right: 20px; /* Add right margin for spacing */
+}
+
+header .social-icons i {
+    font-size: 20px; /* Set font size for social icons */
+    margin-right: 10px; /* Add spacing between social icons */
+    cursor: pointer; /* Make social icons clickable */
+    transition: all 0.5s; /* Add smooth transition effect */
+}
+
+.social-icons i:nth-child(1):hover{
+    color: #1877F2; /* Change color of the first social icon on hover (Facebook blue) */
+}
+
+.social-icons i:nth-child(2):hover{
+    color: #fccc63; /* Change color of the second social icon on hover (Snapchat yellow) */
+}
+
+.social-icons i:nth-child(3):hover{
+    color: #1DA1F2; /* Change color of the third social icon on hover (Twitter blue) */
+}
+
+.social-icons i:nth-child(4):hover{
+    color: #FF0000; /* Change color of the fourth social icon on hover (YouTube red) */
+}
+
+/* Home section styles */
+.home-section {
+    background-image: url('../img/background.jpg'); /* Set background image */
+    background-attachment: fixed; /* Fix background image (parallax effect) */
+    background-size: cover; /* Make background image cover the entire section */
+    height: 100vh; /* Set section height to full viewport height */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text */
+    color: #ff8800; /* Set text color */
+}
+
+.hero h1 {
+    font-size: 48px; /* Set font size for main heading */
+}
+
+.hero h2 {
+    font-size: 24px; /* Set font size for subheading */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+.hero .orange {
+    color: orange; /* Set color for the "orange" part */
+}
+
+.hero .black {
+    color: black; /* Set color for the "black" part */
+}
+
+.cta-button {
+    display: inline-block; /* Display button as inline-block element */
+    background-color: orange; /* Set background color for button */
+    color: #fff; /* Set text color for button */
+    padding: 10px 20px; /* Add padding to button */
+    border-radius: 5px; /* Add rounded corners to button */
+    text-decoration: none; /* Remove underline for button */
+    margin-top: 30px; /* Add top margin for spacing */
+    font-weight: bold; /* Make button text bold */
+    transition: background-color 0.3s ease; /* Add smooth transition effect for background color */
+}
+
+.cta-button:hover {
+    background-color: #e68a00; /* Change background color on hover */
+}
+
+/* Content section styles */
+.content-section {
+    padding: 100px 0; /* Add top and bottom padding */
+}
+
+/* Health benefits section styles */
+
+
+#health-benefits {
+    background-image: url(/img/health-benefit-image.jpg);
+    background-size: cover; /* Make background image (if any) cover the entire section */
+    background-position: center; /* Center background image */
+    padding: 100px 0; /* Add top and bottom padding */
+}
+
+.section-title {
+    margin-top: 0;
+    text-align: center; /* Center section title */
+    position: absolute; /* Position section title absolutely */
+    top: -50px; /* Position section title above the section */
+    left: 50%; /* Position section title horizontally in the center */
+    transform: translateX(-50%); /* Adjust horizontal position of section title */
+    background-color: rgba(225, 225, 225, 0.5); /* Set semi-transparent background color for section title */
+    padding: 10px 20px; /* Add padding to section title */
+    border-radius: 8px; /* Add rounded corners to section title */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    backdrop-filter: blur(5px); /* Add blur effect to section title */
+    z-index: 1; /* Ensure section title is on top of other elements */
+}
+
+.container {
+    position: relative; /* Set position to relative for absolutely positioned children */
+    max-width: 1200px; /* Set maximum width for container */
+    margin: 0 auto; /* Center container horizontally */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.benefit {
+    margin-top: 40px;
+    width: 23%; /* Set width for each benefit item */
+    background-color: #fff; /* Set background color for benefit items */
+    padding: 20px; /* Add padding to benefit items */
+    border-radius: 8px; /* Add rounded corners to benefit items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    text-align: center; /* Center content within benefit items */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    transition: all 0.5s; /* Add smooth transition effect */
+    cursor: pointer;
+}
+    
+.benefit:hover {
+    transform: scale(1.025); /* Scale up benefit item on hover */
+    
+}
+
+.benefit .benefit-image img {
+    width: 100%; /* Make image fill available width */
+    border-radius: 8px; /* Add rounded corners to image */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.benefit-description {
+    font-size: 16px; /* Set font size for benefit description */
+    line-height: 1.6; /* Set line height for better readability */
+}
+
+.benefit-description p {
+    display: -webkit-box; /* Use WebKit box model */
+    -webkit-line-clamp: 3; /* Limit number of lines to display */
+    -webkit-box-orient: vertical; /* Set box orientation to vertical */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.benefit button {
+    padding: 10px 20px; /* Add padding to button */
+    transition: background-color 0.3s ease; /* Add smooth transition effect for background color */
+    margin-top: 10px; /* Add top margin for spacing */
+    cursor: pointer; /* Make button clickable */
+    border-radius: 10px; /* Add rounded corners to button */
+    border: none; /* Remove default border */
+}
+
+/* Parallax effect */
+.parallax {
+    background-attachment: fixed; /* Fix background image (parallax effect) */
+    background-position: center; /* Center background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Make background image cover the entire section */
+}
+
+/* Recipes section styles */
+#recipes {
+    background-image: url('../img/receipe_background.jpg'); /* Set background image */
+    background-size: cover; /* Make background image cover the entire section */
+    background-position: center; /* Center background image */
+    padding: 100px 0; /* Add top and bottom padding */
+}
+
+.recipes {
+    margin-top: 40px;
+    width: 23%; /* Set width for each recipe item */
+    height: fit-content; /* Set height to fit content */
+    background-color: #fff; /* Set background color for recipe items */
+    padding: 20px; /* Add padding to recipe items */
+    border-radius: 8px; /* Add rounded corners to recipe items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box shadow */
+    text-align: center; /* Center content within recipe items */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.recipes:hover {
+    transform: scale(1.025);
+    /* Scale up benefit item on hover */
+}
+.recipes .recipes-image img {
+    width: 100%; /* Make image fill available width */
+    border-radius: 8px; /* Add rounded corners to image */
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+.recipes h3 {
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+#prepare {
+    text-align: left; /* Align content to the left */
+}
+
+#prepare h4 {
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+#prepare ul {
+    list-style-type: circle; /* Set list style type */
+}
+
+/* Fun Facts section styles */
+#fun-facts {
+    background-image: url(/img/funfact_background.jpg);
+    padding: 50px 0; /* Add top and bottom padding */
+}
+
+#fun-facts h2 {
+    position: absolute; /* Position heading absolutely */
+    background-color: rgba(225, 225, 225, 0.5); /* Set semi-transparent background color for heading */
+    border-radius: 10px; /* Add rounded corners to heading */
+    padding: 10px; /* Add padding to heading */
+    font-size: 28px; /* Set font size for heading */
+    backdrop-filter: blur(5px); /* Add blur effect to heading */
+}
+
+.funfact {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 40px; /* Add bottom margin for spacing */
+    background-color: rgba(225, 225, 225, 0.5);
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fun-facts-section img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio of image */
+    border-radius: 50%; /* Make image circular */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add box shadow */
+}
+
+.funfact h4 {
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+/* Bullet point styles */
+ul {
+    padding-left: 5px; /* Add left padding */
+    list-style-type: "\2023"; /* Set list style type to triangular bullet */
+}
+
+ul ul {
+    padding-left: 20px; /* Add left padding */
+    list-style-type: "\25D8"; /* Set list style type to inverse bullet */
+}
+
+ul ol {
+    padding-left: 20px; /* Add left padding */
+}
+
+footer {
+    background-color: orange; /* Set background color for footer */
+    padding: 10px 20px; /* Add padding to footer */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+
+footer .left-side p {
+    color: white; /* Set text color for left side of footer */
+    font-size: 15px;
+}
+
+.right-side i {
+    font-size: 20px; /* Set font size for social icons */
+    margin-left: 10px; /* Add left margin for spacing */
+    color: white; /* Set color for social icons */
+    cursor: pointer; /* Make social icons clickable */
+}
+
+.right-side i:hover {
+    color: black; /* Change color of social icons on hover */
+    transition: all 0.5s; /* Add smooth transition effect */
+}
